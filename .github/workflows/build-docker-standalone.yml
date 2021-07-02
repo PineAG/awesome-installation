@@ -27,11 +27,11 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Build Standalone
         run: |
-          ./docker-compose/standalone/build-standalone.sh
-          mv ./docker-compose/standalone/build/standalone.sh docker-compose-standalone-installation.sh
+          ./docker-compose/ubuntu/standalone/build-standalone.sh
+          mv ./docker-compose/ubuntu/standalone/build/standalone.sh docker-compose-ubuntu-standalone-installation.sh
       - name: Release
         uses: softprops/action-gh-release@v1
         with:
-          files: docker-compose-standalone-installation.sh
+          files: docker-compose-ubuntu-standalone-installation.sh
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
