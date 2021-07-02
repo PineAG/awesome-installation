@@ -16,5 +16,5 @@ cp ./install-standalone.sh ./build/resources/install-standalone.sh
 
 tar -zcvf build/resources.tgz build/resources
 
-cat head.sh build/resources.tgz > build/stadnalone.sh
-chmod +x build/stadnalone.sh
+cat head.sh build/resources.tgz > build/standalone.sh
+chmod +x build/standalone.sh
