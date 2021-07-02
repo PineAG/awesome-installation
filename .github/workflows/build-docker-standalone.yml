@@ -33,5 +33,6 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           files: docker-compose-ubuntu-standalone-installation.sh
+          tag_name: docker-standalone
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
